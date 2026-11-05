@@ -1,0 +1,9 @@
+{
+  "name": "cardif-hr-tech",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cardif-HR Tech HR recruitment prototype",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs"
+  }
+}

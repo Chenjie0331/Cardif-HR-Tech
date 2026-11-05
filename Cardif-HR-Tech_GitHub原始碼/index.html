@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cardif-HR Tech，法國巴黎人壽 HR 招募工作台，集中閱讀履歷、整理經驗與人才標籤。">
+  <title>Cardif-HR Tech｜法國巴黎人壽</title>
+  <meta name="application-name" content="Cardif-HR Tech">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon-cardif.svg?v=1">
+  <link rel="stylesheet" href="css/style.css?v=cardif-hr-tech-35">
+  <link rel="stylesheet" href="css/recruit.css?v=live-drag-1">
+  <link rel="stylesheet" href="css/workspace.css?v=studio-1">
+  <link rel="stylesheet" href="css/interview.css?v=hr-workflow-31">
+  <link rel="stylesheet" href="css/recruitment.css?v=private-export-1">
+  <link rel="stylesheet" href="css/studio.css?v=hr-workflow-31">
+  <link rel="stylesheet" href="css/application.css?v=cardif-hr-tech-33">
+  <link rel="stylesheet" href="css/post-interview.css?v=cardif-hr-tech-33">
+  <link rel="stylesheet" href="css/auth.css?v=3">
+  <script src="js/auth.js?v=cardif-hr-tech-33" defer></script>
+  <script src="js/data.js?v=resume-names-20261104" defer></script>
+  <script src="js/core.js?v=copy-37" defer></script>
+  <script src="js/talent-tags.js?v=copy-37" defer></script>
+  <script src="js/reading-state.js?v=live-drag-1" defer></script>
+  <script src="js/resume-review.js?v=intake-1" defer></script>
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/auth-ui.js?v=cardif-hr-tech-33" defer></script>
+  <script src="js/interview.js?v=hr-workflow-31" defer></script>
+  <script src="js/post-interview.js?v=cardif-hr-tech-33" defer></script>
+  <script src="js/post-interview-ui.js?v=cardif-hr-tech-33" defer></script>
+  <script src="js/recruitment.js?v=cardif-hr-tech-33" defer></script>
+  <script src="js/intake.js?v=cardif-hr-tech-33" defer></script>
+  <script src="js/application.js?v=intake-1" defer></script>
+  <script src="js/navigation.js?v=1" defer></script>
+  <script src="js/job-comparison.js?v=copy-37" defer></script>
+  <script src="js/app.js?v=copy-37" defer></script>
+  <link rel="stylesheet" href="css/job-comparison.css?v=copy-37">
+</head>
+<body>
+  <section id="authScreen" class="auth-screen" aria-labelledby="authTitle" hidden>
+    <div class="auth-card">
+      <div class="auth-brand"><span class="brand-mark"><img src="assets/logo-cardif-official.jpg" alt="BNP PARIBAS CARDIF 法國巴黎人壽" width="559" height="46"></span></div>
+      <h1 id="authTitle" tabindex="-1">登入Cardif-HR Tech</h1>
+      <fieldset class="auth-identities"><legend>使用身分</legend><div class="auth-roles">
+        <label class="auth-role active"><input type="radio" name="identity" value="hr" checked><span>HR 人資</span></label>
+        <label class="auth-role"><input type="radio" name="identity" value="manager" disabled><span>用人主管<span class="role-state">尚未開放</span></span></label>
+        <label class="auth-role"><input type="radio" name="identity" value="employee" disabled><span>內部員工<span class="role-state">尚未開放</span></span></label>
+        <label class="auth-role"><input type="radio" name="identity" value="applicant" disabled><span>外部應徵者<span class="role-state">尚未開放</span></span></label>
+      </div></fieldset>
+      <div class="auth-tabs" role="group" aria-label="登入或註冊"><button type="button" data-auth-tab="login" aria-pressed="true">登入</button><button type="button" data-auth-tab="register" aria-pressed="false">註冊帳號</button></div>
+      <p id="authNotice" class="auth-notice" role="status"></p>
+      <form id="loginForm" class="auth-form">
+        <label>電子郵件<input name="email" type="email" autocomplete="username" maxlength="254" placeholder="name@example.com" required></label>
+        <label>密碼<input name="password" type="password" autocomplete="current-password" maxlength="128" placeholder="請輸入密碼" required></label>
+        <p id="authError" class="auth-error" role="alert"></p>
+        <button class="button primary auth-submit" type="submit">登入工作台</button>
+      </form>
+      <form id="registerForm" class="auth-form" hidden>
+        <label>姓名<input name="name" autocomplete="name" minlength="2" maxlength="40" required></label>
+        <label>電子郵件<input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+        <input type="hidden" name="role" value="hr">
+        <label>設定密碼<input name="password" type="password" autocomplete="new-password" minlength="6" maxlength="128" placeholder="至少 6 個字元" required></label>
+        <label>確認密碼<input name="confirm" type="password" autocomplete="new-password" minlength="6" maxlength="128" required></label>
+        <p id="registerError" class="auth-error" role="alert"></p>
+        <button class="button primary auth-submit" type="submit">建立帳號</button>
+      </form>
+      <details class="auth-quick"><summary>使用展示帳號</summary><button class="button secondary" type="button" data-fill="demo@cardif.demo">填入 HR 展示帳號</button><p>密碼：Cardif123!</p><p>帳號與紀錄保存在目前的瀏覽器，請使用測試資料及專用密碼。</p></details>
+    </div>
+  </section>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Cardif-HR Tech首頁"><span class="brand-mark"><img src="assets/logo-cardif-official.jpg" alt="BNP PARIBAS CARDIF 法國巴黎人壽" width="559" height="46"></span></a>
+    <button id="menuToggle" class="icon-button mobile-only" aria-label="開啟導覽" aria-controls="mainNav" aria-expanded="false"><img src="assets/icons/list.svg" alt=""></button>
+    <nav id="mainNav" aria-label="主要導覽">
+      <a href="#home" data-nav="home" aria-current="page">首頁</a>
+      <a href="#recruit" data-nav="recruit">招募與任用</a>
+      <button class="nav-module" data-action="maintenance">職員資料整理</button>
+      <button class="nav-module" data-action="maintenance">職涯發展</button>
+    </nav>
+    <nav id="applicantNav" aria-label="應徵導覽" hidden><a href="#apply/job">職缺資訊</a><a href="#apply/1">填寫履歷</a></nav>
+    <div class="header-tools">
+      <time id="platformClock" class="platform-clock" aria-label="台灣時間"></time>
+      <button id="notificationButton" class="icon-button notification-button" popovertarget="notificationPanel" aria-label="通知" aria-expanded="false" aria-controls="notificationPanel"><img src="assets/icons/bell.svg" alt=""><span id="notificationBadge" class="notification-badge" hidden></span></button>
+      <button id="themeToggle" class="theme-toggle" aria-label="切換至淺色模式"><img src="assets/icons/sun.svg" alt=""><span id="themeText">淺色</span></button>
+      <button id="settingsButton" class="icon-button" aria-label="開啟顯示與資料設定"><img src="assets/icons/gear-six.svg" alt=""></button>
+      <button id="accountButton" class="user-mark" type="button" aria-label="登入 HR 工作台" aria-haspopup="dialog">登入</button>
+    </div>
+  </header>
+
+  <section id="notificationPanel" class="notification-panel" popover="auto" aria-labelledby="notificationTitle">
+    <div class="notification-heading"><h2 id="notificationTitle">通知</h2><button class="icon-button" popovertarget="notificationPanel" popovertargetaction="hide" aria-label="關閉通知" autofocus><img class="icon" src="assets/icons/x.svg" alt=""></button></div>
+    <div id="notificationList" class="notification-list"></div>
+  </section>
+
+  <main id="main" tabindex="-1">
+    <div class="demo-switch" aria-label="展示介面切換"><span>展示切換</span><a href="#recruit" data-demo="hr">HR 工作區</a><a href="#apply/job" data-demo="applicant">應徵者介面</a></div>
+    <div class="page-heading"><div><h1 id="pageTitle" tabindex="-1">Cardif-HR Tech</h1></div><a id="workspaceOverview" class="workspace-overview" href="#recruit" hidden>職缺總覽</a></div>
+
+    <section id="applicationPage" class="page application-page" data-page="apply" hidden aria-labelledby="pageTitle"></section>
+
+    <section id="homePage" class="page" data-page="home" aria-labelledby="pageTitle">
+      <div class="module-grid">
+        <a class="module-card module-recruit" href="#recruit">
+          <div class="module-copy"><h2>招募與任用</h2><p>履歷閱讀與整理</p></div>
+          <svg class="module-art recruit-art" viewBox="0 0 520 360" aria-hidden="true">
+            <defs><linearGradient id="paperGreen" x2="1" y2="1"><stop stop-color="#b5f2d7" stop-opacity=".22"/><stop offset="1" stop-color="#084b39" stop-opacity=".6"/></linearGradient></defs>
+            <g class="paper paper-back"><path d="M290 36 444 73 444 309 290 268Z" fill="url(#paperGreen)" stroke="#94d7b8" stroke-opacity=".5"/><circle cx="324" cy="94" r="15" fill="#a4ddc5" opacity=".35"/><path d="m350 101 65 16m-98 30 98 24m-98 5 98 24m-98 5 73 18" stroke="#a4ddc5" stroke-width="8" opacity=".25"/></g>
+            <g class="paper paper-middle"><path d="M190 65 359 107 359 345 190 301Z" fill="#0b6249" fill-opacity=".8" stroke="#78c8a4"/><path d="m216 153 113 28m-113 1 113 28m-113 1 86 21" stroke="#a4ddc5" stroke-width="9" opacity=".35"/></g>
+            <g class="paper paper-front"><path d="M109 75 Q99 72 99 87V302L279 347V119L249 110Z" fill="#124d3c" stroke="#c3f8df" stroke-width="2"/><path d="m249 110 0 32 30 7" fill="none" stroke="#c3f8df"/><circle cx="136" cy="137" r="13" fill="#c5f0db"/><path d="M116 165q18-32 39 9" fill="#c5f0db"/><path d="m174 148 53 13m-109 35 124 31m-124-2 124 31m-124-2 91 23m-91 6 109 27" fill="none" stroke="#9ad8b9" stroke-width="8" stroke-linecap="round"/><path d="m118 225 108 27" stroke="#4ae0a3" stroke-width="9" stroke-linecap="round"/></g>
+          </svg>
+        </a>
+        <button class="module-card module-people" data-action="maintenance">
+          <div class="module-copy"><h2>職員資料整理</h2><p>職員訪談、職能與人才標籤</p></div>
+          <svg class="module-art people-art" viewBox="0 0 450 310" aria-hidden="true">
+            <g class="paper paper-back" opacity=".4"><path d="m208 58 164-34v200l-164 36Z" fill="#80b8a2"/><path d="m236 112 104-23m-104 53 104-23m-104 53 75-16" stroke="#eaf8ef" stroke-width="9"/></g>
+            <g class="paper paper-middle" opacity=".65"><path d="m132 89 169-34v207l-169 36Z" fill="#afdbca" stroke="#fff"/><circle cx="171" cy="129" r="15" fill="#6b9e8a"/><path d="m159 180 111-24m-111 52 111-24" stroke="#7aac94" stroke-width="9"/></g>
+            <g class="paper paper-front"><path d="m58 130 179-37v209l-179 39Z" fill="#edf9f2" stroke="#fff" stroke-width="2"/><circle cx="96" cy="171" r="14" fill="#4f9276"/><path d="M77 202q19-30 38-8" fill="#4f9276"/><path d="m136 168 65-14" stroke="#00965e" stroke-width="17" stroke-linecap="round"/><path d="m82 236 119-25m-119 53 119-25m-119 53 74-16" stroke="#a6cabb" stroke-width="9" stroke-linecap="round"/></g>
+          </svg>
+        </button>
+        <button class="module-card module-growth" data-action="maintenance">
+          <div class="module-copy"><h2>職涯發展</h2><p>內部職缺與訓練需求</p></div>
+          <svg class="module-art growth-art" viewBox="0 0 740 290" aria-hidden="true">
+            <g class="paper paper-back"><path d="m230 200 140-110 144 40v170H230Z" fill="#92bcae" fill-opacity=".16" stroke="#8ba99f" stroke-opacity=".5"/></g>
+            <g class="paper paper-middle"><path d="m335 208 105-120 116 30v180H335Z" fill="#00965e" fill-opacity=".55" stroke="#68cba5"/></g>
+            <g class="paper paper-front"><path d="m150 270 172-100 125 36v105H150Z" fill="#b2d0c3" fill-opacity=".32" stroke="#b8d5c7"/></g>
+            <g fill="none" stroke="#75b99c" stroke-width="1.5"><path d="M465 198h95q25 0 25-25v-41"/><path d="M504 239h112q25 0 25-25v-15"/><circle cx="585" cy="108" r="25"/><circle cx="641" cy="174" r="25"/></g><path d="M575 118V104m10 14V96m10 22V89" stroke="#c0ebd4" stroke-width="5"/><path d="m629 179 12-8 12 8m-24-11 12-8 12 8" fill="none" stroke="#c0ebd4" stroke-width="3"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section id="recruitPage" class="page" data-page="recruit" hidden>
+      <a id="resumeWork" class="resume-work" hidden><span class="resume-work-copy"><span class="resume-work-meta"><span class="resume-work-label">繼續上次工作</span><time id="resumeWorkTime"></time></span><strong id="resumeWorkTitle"></strong></span><span class="resume-work-action">繼續工作</span></a>
+      <div class="recruit-toolbar"><div class="recruit-section-heading"><h2>招募中的職缺</h2><span id="jobCount" class="job-count">1 個職缺</span></div><label class="search-box job-search" for="jobSearch"><img class="icon" src="assets/icons/magnifying-glass.svg" alt=""><input id="jobSearch" type="search" placeholder="搜尋職缺或部門" autocomplete="off"></label></div>
+      <article id="jobOpening" class="job-opening" aria-labelledby="openingTitle">
+        <div class="opening-main"><div class="opening-title-row"><h3 id="openingTitle">業務發展部 保險顧問 Insurance Consultant (北區)</h3><span class="opening-state">進行中</span></div><div class="opening-meta"><span>台北市信義區・雙北地區</span><span>全職</span></div><p class="opening-description">服務合作通路、進行商品與銷售技巧教育訓練，協助銷售及行政流程，經營通路、分行與業務員。</p><div class="opening-actions"><a class="button primary" href="#workspace/resume">開啟招募工作區<img class="icon" src="assets/icons/arrow-right.svg" alt=""></a><a class="opening-source" href="https://www.104.com.tw/job/891k1" target="_blank" rel="noopener noreferrer">104 職缺來源</a></div></div>
+        <div class="opening-brief"><div class="opening-brief-heading"><h4>這次招募的重點</h4><span><strong id="openingResumeCount">5</strong> 份履歷</span></div><ul class="opening-requirements"><li>3 年以上壽險業務輔導或個人銷售經驗</li><li>能獨立舉辦中小型商品說明會及教育訓練</li><li>合作通路、分行與業務員經營</li></ul></div>
+      </article>
+      <div id="jobEmpty" class="workspace-empty" hidden><h3>沒有符合的職缺</h3><button class="button secondary" data-action="clear-job-search">清除搜尋</button></div>
+    </section>
+
+    <section id="workspacePage" class="page" data-page="workspace" hidden>
+      <div class="workspace-content">
+        <div class="candidate-bar"><label for="candidatePicker">應徵者<select id="candidatePicker"></select></label><button id="candidateTrayToggle" class="button secondary" aria-controls="candidateTray" aria-expanded="false">搜尋與排序</button></div><section id="candidateTray" class="candidate-tray" aria-label="應徵者搜尋與排序" hidden><div class="candidate-tools"><label class="search-box workspace-search" for="candidateSearch"><img class="icon" src="assets/icons/magnifying-glass.svg" alt=""><input id="candidateSearch" type="search" placeholder="搜尋姓名或經歷" autocomplete="off" aria-label="搜尋履歷"></label><label class="work-filter"><span class="sr-only">處理狀態篩選</span><select id="workFilter"><option value="all">全部應徵者</option><option value="unread">尚未閱讀</option><option value="ask">有面試詢問事項</option><option value="request">等待補充資料</option><option value="stage:reviewing">履歷整理中</option><option value="stage:preparing">面試準備中</option><option value="stage:interviewed">面試已完成</option><option value="stage:complete">本輪已結束</option></select></label><details class="candidate-options"><summary>更多篩選</summary><div><div id="candidateFilters" class="workspace-filters"><div class="reading-filters" role="group" aria-label="閱讀篩選"><button data-reading-filter="all" aria-pressed="true">全部 <span id="allCount"></span></button><button data-reading-filter="unread" aria-pressed="false">未讀 <span id="unreadCount"></span></button><button data-reading-filter="bookmarked" aria-pressed="false">書籤 <span id="bookmarkCount"></span></button></div><label class="select-control" for="tagFilter">標籤 <select id="tagFilter"><option value="">全部</option></select></label></div></div></details><button id="clearSearch" class="text-button" hidden>清除條件</button></div><nav id="resumeRail" class="resume-rail" aria-label="履歷文件"></nav></section>
+        <div class="workbench-header"><nav class="workspace-tools" aria-label="招募工作"><a href="#workspace/resume" data-workspace-tool="resume" aria-current="page">履歷整理</a><a href="#workspace/qualification" data-workspace-tool="qualification">職缺與資格</a><a href="#workspace/interview" data-workspace-tool="interview">面試準備</a><a href="#workspace/after" data-workspace-tool="after">面試評估</a></nav><div class="case-toolbar"><label for="candidateStage"><span id="candidateStageLabel">應徵者</span><span class="sr-only">處理進度</span><select id="candidateStage"></select></label><span id="caseSaveStatus" role="status" aria-live="polite"></span><details class="case-file-menu"><summary>整理紀錄</summary><div><label class="case-private-option"><input id="caseIncludePrivate" type="checkbox">整理文件包含私人筆記</label><button data-case-action="print">匯出整理文件</button></div></details></div></div><div class="reading-desk">
+          <div class="compact-reading-switch" role="group" aria-label="面試閱讀切換"><button data-action="mobile-resume" aria-pressed="false">履歷</button><button data-action="mobile-questions" aria-pressed="true">面試問題</button></div>
+          <section id="resumeReader" class="resume-reader" aria-label="履歷閱讀區">
+            <div id="readerEmpty" class="reader-empty"><img src="assets/icons/file-text.svg" alt=""><h3>選擇一份履歷開始閱讀</h3></div>
+            <div id="readerContent" hidden></div>
+          </section>
+        </div>
+        <section id="jobComparison" class="job-comparison" aria-labelledby="comparisonTitle" hidden></section>
+        <p id="readerStatus" class="reader-status" role="status" aria-live="polite"></p>
+        <div id="candidateEmpty" class="workspace-empty" hidden><h3>沒有符合條件的履歷</h3><button class="button secondary" data-action="clear-search">清除搜尋與篩選</button></div>
+      </div>
+    </section>
+    <footer class="platform-footer"><a href="https://life.cardif.com.tw/" target="_blank" rel="noopener noreferrer" aria-label="前往法國巴黎人壽官方網站"><span>BNP PARIBAS CARDIF</span><strong>法國巴黎人壽</strong></a></footer>
+  </main>
+
+  <section id="maintenancePanel" class="maintenance-panel" popover="auto" aria-labelledby="maintenanceTitle"><button class="icon-button" popovertarget="maintenancePanel" popovertargetaction="hide" aria-label="關閉提示" autofocus><img class="icon" src="assets/icons/x.svg" alt=""></button><h2 id="maintenanceTitle">這項功能目前尚未開放，將於後續階段逐步完善。謝謝你的耐心等候。</h2></section>
+  <dialog id="settingsDialog" aria-labelledby="settingsTitle"><div class="section-heading"><h2 id="settingsTitle">顯示與資料</h2><button class="icon-button" data-action="close-dialog" aria-label="關閉設定"><img class="icon" src="assets/icons/x.svg" alt=""></button></div><label class="setting-row" for="motionToggle"><span>介面動態</span><input id="motionToggle" type="checkbox" checked></label></dialog>
+  <dialog id="accountDialog" aria-labelledby="accountTitle"><div class="section-heading"><h2 id="accountTitle">我的帳號</h2><button id="closeAccount" class="icon-button" aria-label="關閉帳號選單"><img class="icon" src="assets/icons/x.svg" alt=""></button></div><dl class="account-details"><dt>姓名</dt><dd id="accountName"></dd><dt>電子郵件</dt><dd id="accountEmail"></dd><dt>身分</dt><dd id="accountRole"></dd></dl><p>這個瀏覽器的招募紀錄為共用展示資料，登出後仍會保留。</p><p id="accountError" class="auth-error" role="alert"></p><button id="logoutButton" class="button secondary" type="button">登出</button></dialog>
+<!-- 文件與互動區塊的結構在 HTML 維護，app.js 只填入資料。 -->
+  <template id="notificationItemTemplate"><a class="notification-item"><span class="notification-copy"><strong></strong><p></p><time hidden></time></span><img class="icon" src="assets/icons/arrow-right.svg" alt=""></a></template>
+  <template id="notificationEmptyTemplate"><p class="notification-empty">目前沒有通知</p></template>
+  <template id="resumeSlipTemplate">
+    <div class="resume-slip" data-read="false"><button class="slip-open" data-action="open-resume" aria-controls="resumeReader" aria-pressed="false"><span class="slip-status"><span class="unread-dot" aria-hidden="true"></span><span class="slip-bookmark" hidden aria-label="已加書籤"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4z"/></svg></span></span><strong data-field="name"></strong></button><button class="slip-grip" draggable="true" aria-label="拖曳排序，亦可使用左右方向鍵" title="拖曳排序，或使用方向鍵"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h.01M15 6h.01M9 12h.01M15 12h.01M9 18h.01M15 18h.01"/></svg></button></div>
+  </template>
+  <template id="resumeDetailTemplate">
+    <div class="reader-toolbar"><h3 data-field="title"></h3><div class="reader-actions"><button class="icon-button" data-action="previous-resume" aria-label="上一份履歷"><img class="icon" src="assets/icons/arrow-left.svg" alt=""></button><button class="icon-button" data-action="next-resume" aria-label="下一份履歷"><img class="icon" src="assets/icons/arrow-right.svg" alt=""></button><button class="icon-button" data-action="bookmark-resume" aria-label="加入書籤" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button><button class="button secondary small" data-action="mark-unread">標為未讀</button><button class="button secondary small" data-action="toggle-highlights" aria-expanded="false" aria-controls="resumeHighlights">整理</button><button class="button secondary small" data-action="toggle-tags" aria-expanded="false" aria-controls="resumeTags">標籤</button></div></div>
+    <div class="reader-body"><div class="resume-canvas" tabindex="0" aria-label="完整履歷"><div class="resume-document"></div></div><aside class="reading-notes" hidden><section id="resumeHighlights" class="resume-highlights" aria-label="履歷整理" hidden><h4 class="review-title">履歷整理</h4><p class="review-summary" data-field="reviewSummary"></p><ul class="review-points" data-field="highlights"></ul><section class="review-note"><label for="resumeNote">我的筆記</label><textarea id="resumeNote" maxlength="2000" rows="5" placeholder="寫下你的觀察…"></textarea><div class="review-note-footer"><span id="noteSaveStatus" role="status" aria-live="polite"></span><button class="text-button" data-action="save-note">儲存筆記</button></div></section></section><aside id="resumeTags" class="resume-tags" aria-label="人才標籤整理" hidden></aside></aside><section id="interviewPanel" class="interview-paper" aria-label="面試問題" hidden></section><section id="qualificationPanel" class="interview-paper qualification-paper" aria-label="職缺與資格" hidden></section><section id="postInterviewPanel" class="post-interview-panel" aria-label="面試評估" hidden></section></div>
+  </template>
+  <template id="interviewPanelTemplate">
+    <header class="interview-paper-heading"><h2>本次面試題目</h2><span data-field="questionCount"></span></header>
+    <div class="interview-toolbar"><span id="interviewSaveStatus" role="status" aria-live="polite"></span><button class="interview-button" data-interview-action="new">新增問題</button></div>
+    <div data-field="editor"></div><ol class="interview-questions" data-field="questions"></ol><p class="question-empty" data-field="empty" hidden>尚未選題，可從建議問題加入，或自行新增。</p><button class="text-button" data-interview-action="undo" hidden>復原刪除</button>
+    <details class="interview-suggestions" data-field="suggestionPicker"><summary>建議問題</summary><ul data-field="suggestions"></ul></details><div class="interview-next"><button class="button secondary" data-action="start-post-interview">記錄面試</button></div>
+  </template>
+  <template id="qualificationTemplate">
+    <header class="interview-paper-heading"><h2>職缺與資格</h2></header><nav class="qualification-views question-views" aria-label="資格查核區域"><button data-qualification-view="requirements" aria-pressed="true">職缺要求</button><button data-qualification-view="certificates" aria-pressed="false">證照</button><button data-qualification-view="scope" aria-pressed="false">任用範圍</button></nav>
+    <section class="qualification-section" data-qualification-section="requirements"><div class="qualification-heading"><a class="source-link" href="https://www.104.com.tw/job/891k1" target="_blank" rel="noopener noreferrer">104 職缺資料</a></div><div data-field="requirements"></div></section>
+    <section class="qualification-section" data-qualification-section="certificates"><h3>職缺列出的加分證照</h3><div data-field="certificates"></div></section>
+    <section class="qualification-section" data-qualification-section="scope"><h3>任用與工作範圍</h3><label class="case-label" for="jobRecruitmentScope">此職缺共同工作範圍<select id="jobRecruitmentScope"><option value="unknown">未確認</option><option value="yes">涉及</option><option value="no">不涉及</option></select></label><p class="scope-description">是否涉及保險招攬，由此職缺的共同工作內容確認。</p><label class="scope-override"><input id="scopeOverride" type="checkbox">此人適用不同工作範圍</label><label id="personScope" class="case-label" for="recruitmentScope" hidden>此人工作是否涉及保險招攬<select id="recruitmentScope"><option value="unknown">未確認</option><option value="yes">涉及</option><option value="no">不涉及</option></select></label><div data-field="legalChecks" hidden></div><a class="source-link" href="https://law.fsc.gov.tw/LawContent.aspx?id=FL006761" target="_blank" rel="noopener noreferrer">保險招攬行為範圍（第 15 條）</a><a class="source-link law-source" href="https://law.fsc.gov.tw/LawContent.aspx?id=FL006761" target="_blank" rel="noopener noreferrer">保險業務員管理規則（查閱 2026/11/03）</a></section>
+  </template>
+  <template id="qualificationRowTemplate"><article class="recruitment-check"><h4 data-field="title"></h4><p data-field="evidence"></p><div class="qualification-actions"><button class="source-link" data-action="highlight-source">(提及處)</button><label><span class="sr-only" data-field="statusLabel"></span><select data-check-status></select></label><button class="source-link" data-action="question-from-review">加入面試問題</button></div><label class="check-note-label"><span class="sr-only" data-field="noteLabel"></span><textarea data-check-note rows="2" maxlength="1200" placeholder="核對結果或補充事項"></textarea></label></article></template>
+  <template id="interviewSuggestionTemplate"><li><p data-field="text"></p><div class="suggestion-actions"><button class="source-link" data-action="highlight-source">提及處</button><button class="button secondary" data-choose-question>加入面試</button></div></li></template>
+  <template id="postObservationTemplate"><article class="post-observation"><h4 data-field="title"></h4><p data-field="text"></p><div class="suggestion-actions"><button class="button secondary" data-post-action="cite" data-cite-target="strengths">列為強項</button><button class="button secondary" data-post-action="cite" data-cite-target="concerns">列為待釐清</button></div></article></template>
+  <template id="interviewQuestionTemplate">
+    <li class="interview-question"><p data-field="question"></p><div class="question-controls"><button class="source-link" data-action="highlight-source">(提及處)</button><button data-interview-action="edit">編輯</button><button data-interview-action="up">上移</button><button data-interview-action="down">下移</button><button data-interview-action="remove">刪除</button></div></li>
+  </template>
+  <template id="interviewEditorTemplate">
+    <form class="question-editor"><label for="questionText">問題<textarea id="questionText" maxlength="1200" rows="4" required></textarea></label><details class="source-picker"><summary>連結履歷</summary><label for="sourceSearch">搜尋公司、職稱或工作內容<input id="sourceSearch" type="search" autocomplete="off" maxlength="1200"></label><div id="sourceResults" aria-live="polite"></div></details><div class="linked-passage" data-field="sourceQuote" hidden></div><p class="question-editor-error" role="alert" hidden>請填寫完整問題。</p><div class="editor-actions"><button class="button primary" type="submit">儲存問題</button><button class="text-button" type="button" data-interview-action="cancel">取消</button></div></form>
+  </template>
+  <template id="resumeHighlightTemplate"><li class="resume-highlight"><p data-field="text"></p><div class="review-point-actions"><button class="source-link" data-action="highlight-source">(提及處)</button><button class="source-link" data-action="question-from-review">新增問題</button></div></li></template>
+  <template id="resumeContactTemplate"><dl class="cv-contact"><div><dt>居住地</dt><dd data-field="location"></dd></div><div><dt>手機</dt><dd data-field="phone"></dd></div><div class="contact-email"><dt>Email</dt><dd data-field="email"></dd></div><div><dt>可到職時間</dt><dd data-field="availability"></dd></div><div><dt>聯絡時段</dt><dd data-field="contactTime"></dd></div></dl></template>
+  <template id="resumeClassicTemplate">
+    <article class="resume-sheet resume-classic"><header class="cv-header"><h2 data-field="name"></h2></header><template data-field="contacts"></template><section class="cv-summary"><h3>關於我</h3><div data-field="summary"></div></section><section><h3>工作經歷</h3><div data-field="experience"></div></section><div class="cv-bottom"><section><h3>學歷</h3><div data-field="education"></div></section><section><h3>專業證照</h3><ul data-field="certs"></ul></section></div><section><h3>專長技能</h3><ul class="cv-skill-list" data-field="skills"></ul></section></article>
+  </template>
+  <template id="resumeWarmTemplate">
+    <article class="resume-sheet resume-warm"><aside class="cv-profile"><header class="cv-header"><h2 data-field="name"></h2></header><template data-field="contacts"></template><section><h3>學歷</h3><div data-field="education"></div></section><section><h3>專長技能</h3><ul data-field="skills"></ul></section><section><h3>專業證照</h3><ul data-field="certs"></ul></section></aside><div class="cv-main"><section><h3>工作經歷</h3><div data-field="experience"></div></section><section><h3>自傳</h3><div data-field="summary"></div></section></div></article>
+  </template>
+  <template id="resumeBlueTemplate">
+    <article class="resume-sheet resume-blue"><header class="cv-header"><h2 data-field="name"></h2></header><template data-field="contacts"></template><div class="cv-columns"><div class="cv-main"><section><h3>工作經歷</h3><div data-field="experience"></div></section><section><h3>個人簡介</h3><div data-field="summary"></div></section><section><h3>專長技能</h3><ul class="cv-skill-list" data-field="skills"></ul></section></div><aside class="cv-profile"><section><h3>教育背景</h3><div data-field="education"></div></section><section><h3>證照資格</h3><ul data-field="certs"></ul></section></aside></div></article>
+  </template>
+  <template id="resumeSimpleTemplate">
+    <article class="resume-sheet resume-simple"><header class="cv-header"><h2 data-field="name"></h2></header><template data-field="contacts"></template><section><h3>教育背景</h3><div data-field="education"></div></section><section><h3>工作與實習經歷</h3><div data-field="experience"></div></section><section><h3>自我介紹</h3><div data-field="summary"></div></section><div class="cv-bottom"><section><h3>技能</h3><ul data-field="skills"></ul></section><section><h3>證照</h3><ul data-field="certs"></ul></section></div></article>
+  </template>
+  <template id="resumeSlateTemplate">
+    <article class="resume-sheet resume-slate"><header class="cv-header"><h2 data-field="name"></h2></header><template data-field="contacts"></template><div class="cv-main"><section><h3>個人簡介</h3><div data-field="summary"></div></section><section><h3>專業經歷</h3><div data-field="experience"></div></section><div class="cv-bottom"><section><h3>核心技能</h3><ul data-field="skills"></ul></section><section><h3>教育與資格</h3><div data-field="education"></div><ul data-field="certs"></ul></section></div></div></article>
+  </template>
+  <template id="paperEducationTemplate"><div class="paper-education"><strong data-field="school"></strong><span data-field="major"></span><span data-field="period"></span></div></template>
+  <template id="paperExperienceTemplate"><section class="paper-experience"><h4 data-field="role"></h4><div class="paper-experience-meta"><strong data-field="company"></strong><time data-field="period"></time></div><ul data-field="description"></ul></section></template>
+  <template id="paperListTemplate"><li></li></template>
+  <template id="paperParagraphTemplate"><p></p></template>
+  <template id="sourceLineTemplate"><span class="source-line" tabindex="-1"></span></template>
+  <template id="tagPanelTemplate">
+    <h4 class="talent-tags-title">人才標籤</h4>
+    <div class="talent-tags-list" data-field="tagsAnchor" role="group" aria-label="應徵者人才標籤"></div>
+    <section class="talent-tag-detail" data-field="detail" hidden><h5 data-field="tagName"></h5><p data-field="description"></p><blockquote data-field="quote"></blockquote></section>
+  </template>
+  <template id="tagEmptyTemplate"><p class="empty-state">目前沒有可辨識的標籤</p></template>
+  <template id="postInterviewTemplate">
+    <div class="post-workspace">
+      <header class="post-heading"><h2>面試評估</h2><div class="post-heading-actions"><span data-field="completion" role="status"></span><button class="button secondary" data-post-action="reopen" hidden>重新編輯</button><button class="button secondary" data-post-action="export">匯出評估</button></div></header>
+      <nav class="post-views" aria-label="面試評估工作"><button data-post-view="records" aria-pressed="true">面試紀錄</button><button data-post-view="assessment" aria-pressed="false">評估與後續</button><button data-post-view="preview" aria-pressed="false">預覽與匯出</button></nav>
+      <p class="post-error" role="alert" tabindex="-1" hidden></p>
+      <section class="post-records" data-post-surface="records"><aside class="post-sessions"><div data-field="sessions"></div><button class="text-button" data-post-action="new">新增面試紀錄</button><button class="text-button" data-post-action="undo" hidden>復原刪除</button></aside><div data-field="sessionEditor"></div></section>
+      <section class="post-assessment" data-post-surface="assessment" hidden>
+        <details class="post-observation-picker" data-field="observationPicker"><summary>引用面試觀察</summary><p>選擇原始紀錄，加入工作強項或待釐清事項。</p><div data-field="observations"></div></details><label for="postSummary">整體觀察<textarea id="postSummary" data-assessment-field="summary" maxlength="3000" rows="4"></textarea></label>
+        <div class="post-two-columns"><label for="postStrengths">工作強項<textarea id="postStrengths" data-assessment-field="strengths" maxlength="3000" rows="4"></textarea></label><label for="postConcerns">待釐清事項<textarea id="postConcerns" data-assessment-field="concerns" maxlength="3000" rows="4"></textarea></label></div>
+        <label for="postTags">面談觀察標籤<input id="postTags" data-assessment-field="tags" maxlength="150" placeholder="以頓號分隔，例如：表達有條理、主動協調"></label>
+        <div class="post-two-columns"><label for="postDecision">後續處理<select id="postDecision" data-assessment-field="decision"></select></label><label for="postReviewer">評估人<input id="postReviewer" data-assessment-field="reviewer" maxlength="100" autocomplete="off"></label></div>
+        <label for="postNext">後續安排<textarea id="postNext" data-assessment-field="next" maxlength="2000" rows="3"></textarea></label>
+        <div class="post-finish"><label for="postDue">預定處理日期<input id="postDue" type="date" data-assessment-field="due"></label><button class="button primary" data-post-action="finish">完成評估</button></div>
+        <section class="post-history" data-field="history" hidden><h3>先前評估</h3><div data-field="items"></div></section>
+      </section>
+      <section class="post-preview-view" data-post-surface="preview" hidden><div class="post-export-options"><label><input type="checkbox" data-post-option="private">包含我的私人筆記</label><label><input type="checkbox" data-post-option="questions">附上各場面試題目</label></div><div class="post-preview" data-field="preview"></div></section>
+    </div>
+  </template>
+  <template id="postSessionButtonTemplate"><button class="post-session" type="button" aria-pressed="false"><strong data-field="name"></strong><span data-field="meta"></span></button></template>
+  <template id="postEmptyTemplate"><div class="post-empty"><h3>尚無面試紀錄</h3></div></template>
+  <template id="postPreviewEmptyTemplate"><p class="post-empty">尚無可匯出的評估內容</p></template>
+  <template id="postSessionTemplate"><section class="post-session-editor">
+    <div class="post-session-heading"><label for="roundTitle">面試名稱<input id="roundTitle" data-session-field="title" maxlength="80"></label><button class="text-button" data-post-action="remove">刪除紀錄</button></div>
+    <div class="post-two-columns"><label for="roundAt">面試日期<input id="roundAt" type="datetime-local" data-session-field="at"></label><label for="roundInterviewer">面試官<input id="roundInterviewer" data-session-field="interviewer" maxlength="100" autocomplete="off"></label></div>
+    <label for="roundNotes">重要回答與觀察<textarea id="roundNotes" data-session-field="notes" rows="10" maxlength="6000"></textarea></label>
+    <details class="post-question-reference" data-field="questionReference"><summary>本次面試題目</summary><ol data-field="questions"></ol></details>
+  </section></template>
+  <template id="postHistoryTemplate"><details><summary></summary><p></p></details></template>
+  <template id="tagTemplate"><button type="button" class="talent-tag" data-action="describe-tag" aria-expanded="false"></button></template>
+  <div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <template id="applicationBasicTemplate"><div class="application-fields">
+    <label>姓名（必填）<input name="name" id="application-name" maxlength="60" autocomplete="name" required></label>
+    <label>Email（必填）<input type="email" name="email" id="application-email" maxlength="254" autocomplete="email" required></label>
+    <label>聯絡電話（必填）<input type="tel" name="phone" id="application-phone" maxlength="40" autocomplete="tel" required></label>
+    <label>居住縣市／行政區<input name="location" id="application-location" maxlength="100" autocomplete="address-level2"></label>
+    <label>可到職時間<input name="availability" id="application-availability" maxlength="100" placeholder="例如：錄取後一個月"></label>
+    <label>方便聯絡的時段<input name="contactTime" id="application-contactTime" maxlength="100" placeholder="例如：平日 18:00 後"></label>
+  </div></template>
+  <noscript><div class="notice">請啟用 JavaScript 以載入應徵者資料與互動功能。</div></noscript>
+</body>
+</html>

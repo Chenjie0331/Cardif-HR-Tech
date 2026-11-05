@@ -1,0 +1,138 @@
+/* 深色底沿用首頁模組的斜面，內容與表單使用獨立底色。 */
+html[data-theme=dark] body[data-view=home],
+html[data-theme=dark] body[data-view=recruit],
+html[data-theme=dark] body[data-view=workspace]{
+  background:
+    linear-gradient(153deg,transparent 0 61%,#27594055 61% 78%,transparent 78%),
+    linear-gradient(125deg,#224737 0%,#15352a 39%,#0d201b 80%);
+  background-attachment:fixed;
+}
+body[data-view=recruit] main,body[data-view=workspace] main{position:relative}
+body[data-view=workspace] .page-heading{padding-right:140px;margin-bottom:20px}
+body[data-view=workspace] #pageTitle{font-size:26px;max-width:1100px;line-height:1.5;letter-spacing:0}
+.job-workspace-heading{position:absolute;right:0;top:-60px;justify-content:flex-end;margin:0}
+.workspace-content{padding-top:20px;border-top-color:#8eac9740}
+.workspace-content-heading{margin-bottom:16px}
+.workspace-content-heading h2{font-size:20px}
+.workspace-content .list-toolbar{margin-bottom:14px}
+.workspace-content .search-box{background:#12221c;min-height:44px}
+body[data-view=recruit] .job-search{background:#12221c}
+.opening-title-row h3{font-size:30px;line-height:1.5;text-wrap:balance}
+.opening-meta{margin-top:22px}
+.job-opening{border-radius:12px;box-shadow:0 20px 50px #040e0929}
+.opening-main{padding:40px}
+.opening-brief{margin-block:36px}
+.reading-desk{gap:22px}
+.resume-rail{padding:14px 6px 20px;gap:14px;border-bottom:1px solid #8eac973d;align-items:stretch}
+.resume-slip{background:var(--slip-paper);box-shadow:0 5px 12px #050e0933;min-height:114px;border-radius:2px 2px 5px 5px}
+.resume-slip[data-read=true]{background:color-mix(in srgb,var(--slip-paper) 90%,#81968b)}
+.resume-slip:after{border-bottom-color:#bcc9bd}
+.resume-slip[data-active=true]{transform:translateY(-5px);outline-color:#b9d8bf;outline-offset:3px}
+.resume-slip[data-active=true] .slip-open{box-shadow:inset 0 -3px #237951}
+.resume-slip:hover{transform:translateY(-3px)}
+.slip-open{min-height:114px;padding:13px 18px 28px}
+.slip-open strong{font-size:19px}
+.slip-open>[data-field=role]{font-size:13px;line-height:1.65}
+.resume-reader{border:0;border-radius:12px;box-shadow:0 14px 40px #040e0930;background:#20332a}
+.reader-toolbar{min-height:64px;padding:10px 20px;background:#1b3027;border-bottom-color:#45604e;border-radius:12px 12px 0 0}
+.reader-toolbar h3{font-size:17px}
+.reader-actions{gap:5px}
+.reader-actions .button,.reader-actions .icon-button{min-height:40px;font-size:13px}
+.reader-actions .icon-button{min-width:38px}
+.resume-canvas{padding:36px;background:linear-gradient(115deg,#35483b,#2b3d32 56%,#2d4135);border-radius:0 0 12px 12px}
+.resume-document{max-width:820px}
+.resume-sheet{box-shadow:0 12px 26px #08180f38}
+.reading-notes{background:#192c24;border-radius:0 0 12px 0}
+.resume-highlights{padding:26px 24px}
+.resume-highlights .review-title{font-size:19px;color:var(--text);margin:0 0 14px}
+.review-summary{font-size:16px;line-height:1.9;color:var(--text);margin:0 0 12px}
+.review-points{list-style:none;margin:0 0 24px;padding:0;border-top:1px solid var(--line)}
+.resume-highlight{width:auto;text-align:left;background:none;color:var(--text);padding:20px 0;border:0;border-bottom:1px solid var(--line);cursor:auto}
+.resume-highlight:last-child{border-bottom:0;padding-bottom:0}
+.resume-highlight p{font-size:16px;line-height:1.9;margin:0;color:var(--text)}
+.source-link{display:inline-flex;align-items:center;border:0;background:none;padding:4px 0;min-height:44px;font:inherit;font-size:15px;color:var(--accent);cursor:pointer}
+.source-link:hover{text-decoration:underline;text-underline-offset:4px}
+.source-link:focus-visible{outline-offset:4px;outline-width:2px}
+.review-note{padding-top:24px;border-top:1px solid var(--line)}
+.review-note label{display:block;font-size:16px;font-weight:600;color:var(--text);margin-bottom:12px}
+.review-note textarea{display:block;width:100%;min-height:132px;resize:vertical;background:#102119;color:var(--text);border:1px solid #54705d;border-radius:6px;padding:12px 13px;font:inherit;font-size:14px;line-height:1.9;caret-color:var(--accent)}
+.review-note textarea::placeholder{color:#a1b5a6}
+.review-note textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.review-note-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;margin-top:8px}
+.review-note-footer>span{font-size:13px;color:var(--muted)}
+.review-note-footer .text-button{white-space:nowrap;min-height:44px;font-size:13px}
+.resume-sheet .source-line.highlight{color:#243a2a;background:#e6edbf;box-shadow:0 0 0 3px #d7dfb1}
+body[data-view=workspace] ::selection,body[data-view=recruit] ::selection{background:#b8d0bb;color:#11251a}
+.reader-body.with-tags{grid-template-columns:minmax(0,1fr)}
+@media(min-width:1100px){
+  .reader-body.with-tags{grid-template-columns:minmax(0,1fr) 310px}
+  .reading-notes{border-left:1px solid #45604e;min-height:100%}
+  .with-tags .resume-canvas{padding:30px 28px;border-radius:0 0 0 12px}
+  .with-tags .resume-sheet{padding:38px 34px}
+  .with-tags .resume-warm,.with-tags .resume-slate{padding:0}
+}
+@media(min-width:1600px){.reader-body.with-tags{grid-template-columns:minmax(0,1fr) 340px}.resume-highlights{padding:28px}}
+@media(max-width:1099px){
+  .reader-body.with-tags{display:flex;flex-direction:column}
+  .reading-notes{order:-1;width:100%;border-bottom:1px solid var(--line);border-radius:0}
+  .reader-body.with-tags>.resume-canvas{width:100%}
+  .resume-highlights{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:0 28px;padding:24px}
+  .resume-highlights .review-title,.review-summary,.review-note{grid-column:1}
+  .resume-highlights>[data-field=highlights]{grid-column:2;grid-row:1 / span 4}
+  .review-summary{margin-bottom:20px}
+  .review-note{padding-top:18px;align-self:start}
+}
+@media(max-width:720px){
+  body[data-view=workspace] .page-heading{padding-right:0;margin-bottom:8px}
+  body[data-view=workspace] #pageTitle{font-size:21px}
+  .job-workspace-heading{position:static;justify-content:flex-start;margin:12px 0 18px}
+  .back-link{font-size:14px;min-height:40px}
+  .opening-title-row h3{font-size:25px}
+  .opening-main{padding:28px 24px}
+  .opening-meta{font-size:14px;margin-top:18px}
+  .resume-rail{grid-auto-columns:174px;gap:14px;padding-top:10px}
+  .resume-slip,.slip-open{min-height:112px}
+  .reader-toolbar{padding:14px 16px;gap:12px}
+  .reader-actions{gap:3px}
+  .reader-actions .button,.reader-actions .icon-button{min-height:44px}
+  .reader-actions .icon-button{min-width:40px}
+  .resume-highlights{display:block;padding:24px 20px}
+  .resume-canvas{padding:20px 12px}
+  .resume-sheet{font-size:14px}
+}
+html[data-theme=light] body[data-view=recruit],html[data-theme=light] body[data-view=workspace]{background:linear-gradient(125deg,#e2e9df,#f0f0e6 52%,#e9ece2)}
+html[data-theme=light] body[data-view=recruit] .job-search{background:#f7f8f1}
+html[data-theme=light] .workspace-content .search-box{background:#f7f8f1}
+html[data-theme=light] .reader-toolbar{background:#e6ede2;border-bottom-color:#b6c8b8}
+html[data-theme=light] .reading-notes{background:#f1f4eb;border-color:#b6c8b8}
+html[data-theme=light] .resume-canvas{background:linear-gradient(115deg,#ced9c9,#dce2d4 58%,#d2dccd)}
+html[data-theme=light] .review-note textarea{background:#fbfcf6;color:#203f2c;border-color:#9aac98}
+html[data-theme=light] .review-note textarea::placeholder{color:#5c705d}
+html[data-theme=light] .resume-highlight{border-bottom-color:#b3c4b1}
+html[data-theme=light] .resume-slip[data-active=true]{outline-color:#276f47}
+html[data-motion=off] .resume-slip{transition:none}
+@media(prefers-reduced-motion:reduce){.resume-slip{transition:none}}
+
+/* 聯絡資訊跟隨各自版型，履歷內文保持清晰深色。 */
+.reader-body .resume-sheet,.reader-body.with-tags .resume-sheet{--cv-ink:#202824;--cv-muted:#303b34;font-size:16px;line-height:1.85;min-height:0}
+.resume-sheet p,.resume-sheet li,.resume-sheet .paper-education,.resume-sheet .paper-experience-meta{color:var(--cv-ink)}
+.resume-sheet .paper-experience ul,.resume-sheet .cv-summary p,.resume-sheet .cv-main>section p{font-size:16px}
+.resume-sheet .cv-header p{font-size:15px;color:var(--cv-ink)}
+.resume-sheet .paper-education,.resume-sheet .cv-bottom ul,.resume-sheet .cv-profile ul,.resume-sheet .cv-skill-list{font-size:15px}
+.resume-sheet .paper-experience-meta,.resume-sheet .paper-education [data-field=period]{font-size:14px;color:var(--cv-ink)}
+.resume-sheet .paper-experience-meta strong{font-weight:500}
+.resume-sheet h3{font-size:18px}
+.cv-contact{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px;margin:0 0 30px;padding:0 0 24px;border-bottom:1px solid var(--cv-rule);font:15px/1.7 "Microsoft JhengHei","Noto Sans TC",sans-serif;color:var(--cv-ink)}
+.cv-contact>div{min-width:0}
+.cv-contact dt{font-size:14px;font-weight:600;margin:0 0 3px}
+.cv-contact dd{margin:0;overflow-wrap:anywhere}
+.cv-contact .contact-email{grid-column:1/-1}
+.resume-classic .cv-contact{margin-top:0}
+.resume-warm .cv-contact{grid-template-columns:minmax(0,1fr);gap:16px;margin-bottom:28px;padding-bottom:24px}
+.resume-warm .cv-contact .contact-email{grid-column:auto}
+.resume-blue .cv-contact{grid-template-columns:repeat(3,minmax(0,1fr))}
+.resume-blue .cv-contact .contact-email{grid-column:auto}
+.resume-slate>.cv-contact{margin:0;padding:28px 42px;border-bottom:1px solid var(--cv-rule)}
+.resume-slate .cv-header h2,.resume-slate .cv-header p{color:#fff}
+@media(max-width:950px){.resume-blue .cv-contact{grid-template-columns:repeat(2,minmax(0,1fr))}.resume-slate>.cv-contact{padding:26px 28px}}
+@media(max-width:480px){.cv-contact,.resume-blue .cv-contact{grid-template-columns:minmax(0,1fr);gap:12px}.cv-contact .contact-email{grid-column:auto}.resume-warm .cv-contact{margin-top:24px}.resume-slate>.cv-contact{padding:24px 22px}}
